@@ -5,84 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shotbyams</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="all-works.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="logo">Anoop Mohan</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    
-    </div>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Anoop Mohan</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.facebook.com/abhijith.sainthav" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/abhijith_sainthav/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-            <h3>Hi, I’m Anoop Mohan S.</h3>
+            <h2>Hi, I’m Anoop Mohan S.</h2>
             <p>I’m a freelance photographer and videographer with a passion for capturing a wide range of subjects. From everyday moments to special projects, I bring creativity and professionalism to every shoot.</p>
-            
-     </div>
+            <a href="#portfolio" class="button">View My Work</a>
+        </div>
+    </section>
 
-<section id="portfolio">
-    <div class="container">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <a href="https://www.youtube.com/watch?v=Gacy9px-aMI" target="_blank">
-                    <img src="memyself.jpg" alt="Me Myself & I">
-                </a>
-                <div class="overlay">
-                    <h3>Me Myself & I</h3>
-                    <p class="description">Penning the captivating web series "Me, Myself, and I," featuring Ahaana Krishna.</p>
-                    <a href="https://www.youtube.com/watch?v=Gacy9px-aMI" target="_blank" class="youtube-icon">
-                        <img src="youtube-icon-white.png" alt="YouTube">
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=Gacy9px-aMI" target="_blank">
+                        <img src="memyself.jpg" alt="Me Myself & I">
+                        <div class="overlay">
+                            <h3>Me Myself & I</h3>
+                            <p class="description">Penning the captivating web series "Me, Myself, and I," featuring Ahaana Krishna.</p>
+                            <div class="youtube-icon">
+                                <a href="https://www.youtube.com/watch?v=Gacy9px-aMI" target="_blank">
+                                    <img src="youtube-icon-white.png" alt="YouTube">
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=dx9vUjKc9jk&t=10s" target="_blank">
+                        <img src="bhayam.jpg" alt="Bhayam">
+                        <div class="overlay">
+                            <h3>Bhayam</h3>
+                            <p class="description">Directed the short film "Bhayam," which earned acclaim and an award from Nikon Masters of Motion Season-2.</p>
+                            <div class="youtube-icon">
+                                <a href="https://www.youtube.com/watch?v=dx9vUjKc9jk&t=10s" target="_blank">
+                                    <img src="youtube-icon-white.png" alt="YouTube">
+                                </a>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <a href="https://www.youtube.com/watch?v=dx9vUjKc9jk&t=10s" target="_blank">
-                    <img src="bhayam.jpg" alt="Bhayam">
-                </a>
-                <div class="overlay">
-                    <h3>Bhayam</h3>
-                    <p class="description">Directed the short film "Bhayam," which earned acclaim and an award from Nikon Masters of Motion Season-2.</p>
-                    <a href="https://www.youtube.com/watch?v=dx9vUjKc9jk&t=10s" target="_blank" class="youtube-icon">
-                        <img src="youtube-icon-white.png" alt="YouTube">
-                    </a>
-                </div>
+        </div>
+    </section>
+
+    <!-- Show More Section -->
+    <section id="show-more">
+        <div class="container">
+            <a href="all-works.html" class="button">Show More</a>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievement-content">
+                <img src="achievement1.png" alt="Nikon Masters of Motion Season-2 Award">
             </div>
         </div>
-    </div>
-</section>
-   
-</section>
-    <!-- New Show More Section -->
-<section id="show-more">
-    <div class="container">
-        <a href="all-works.html" class="button">Show More</a>
-    </div>
-</section>
+    </section>
 
-            <section id="achievements">
-    <div class="container">
-        <h2>Achievements</h2>
-        <div class="achievement-content">
-            <img src="achievement1.png" alt="Nikon Masters of Motion Season-2 Award">
-        </div>
-    </div>
-</section>
-
-        </div>
-    </div>
-</section>
-
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
@@ -91,24 +110,17 @@
         </div>
     </section>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/abhijith.sainthav" target="_blank">
-                <img src="facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com/yourprofile" target="_blank">
-                <img src="twitter-icon.png" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com/abhijith_sainthav/" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
-                <img src="linkedin-icon.png" alt="LinkedIn">
-            </a>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Anoop Mohan. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/abhijith.sainthav" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/abhijith_sainthav/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
