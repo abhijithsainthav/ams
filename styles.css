@@ -14,11 +14,11 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
 .social-media a {
     margin: 0 10px; /* Adjust spacing between icons */
 }
 
-}
 /* Header */
 header {
     background: #fff;
@@ -32,21 +32,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-.social-media a {
-    margin-left: 15px;
-}
-
-.social-media img {
-    width: 24px; /* Adjust size as needed */
-    height: auto;
-    transition: opacity 0.3s ease;
-}
-
-.social-media img:hover {
-    opacity: 0.8;
-}
-
 
 .logo {
     font-family: 'Montserrat', sans-serif;
@@ -80,10 +65,12 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('your-image.jpeg') no-repeat center center/cover;
+    background: url('your-image.jpeg') no-repeat center center;
+    background-size: cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
+    margin-bottom: 60px; /* Space between hero and portfolio */
 }
 
 #hero h2 {
@@ -110,28 +97,9 @@ header nav ul li a:hover {
     background: #0056b3;
 }
 
-/* About Section */
-#about {
-    background: #fff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #555;
-}
-
 /* Portfolio Section */
 #portfolio {
-    padding: 60px 0 20px 0; /* Adjusted the bottom padding */
+    padding: 60px 0;
 }
 
 #portfolio h2 {
@@ -181,6 +149,7 @@ header nav ul li a:hover {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .portfolio-item:hover .overlay {
@@ -200,7 +169,6 @@ header nav ul li a:hover {
 .portfolio-item .overlay .description {
     font-size: 0.8em; /* Reduce the size of the description by 50% */
     margin: 0 15px; /* Ensure even spacing from both sides */
-    text-align: center;
 }
 
 /* YouTube Icon Styling */
@@ -218,14 +186,11 @@ header nav ul li a:hover {
 .youtube-icon:hover img {
     opacity: 0.8;
 }
-/* Ensure sections do not overlap */
-#portfolio {
-    margin-bottom: 40px; /* Space between Portfolio and Show More section */
-}
+
 /* Show More Section */
 #show-more {
     background: #f7f7f7; /* Light background color for the section */
-    padding: -20px -20px; /* Space above and below the button */
+    padding: 20px 0; /* Adjust padding for spacing */
     text-align: center; /* Center align the button */
 }
 
@@ -235,7 +200,7 @@ header nav ul li a:hover {
 }
 
 #show-more .button {
-    padding: 0px 30px; /* Adjust padding for a larger button */
+    padding: 10px 30px; /* Adjust padding for a larger button */
     font-size: 1.2em; /* Larger font size for visibility */
     background: #007BFF; /* Button background color */
     color: #fff; /* Button text color */
@@ -248,29 +213,14 @@ header nav ul li a:hover {
     background: #0056b3; /* Darker background on hover */
 }
 
-/* Ensure sections do not overlap */
-#portfolio {
-    margin-bottom: 40px; /* Space between Portfolio and Show More section */
-}
-
-#achievements {
-    margin-top: 40px; /* Space between Show More and Achievements sections */
-}
-
-#achievements {
-    margin-top: 40px; /* Space between Show More and Achievements sections */
-}
-
 /* Achievements Section */
 #achievements {
     padding: 20px 0 60px 0; /* Adjusted the top padding */
     background-color: #f7f7f7;
-    margin-top: -20px; /* Added negative margin to pull the section closer */
-    margin-bottom: 30px;
+    margin-top: 40px; /* Space between Show More and Achievements sections */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -278,7 +228,6 @@ header nav ul li a:hover {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
-    width: 100%;
 }
 
 .achievement-content {
@@ -297,29 +246,13 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure there's no overlap with the next section */
-#contact {
-    padding-top: 5px;
-    clear: both;
-}
-
 /* Contact Section */
 #contact {
     background: #007BFF;
     color: #fff;
     padding: 60px 0;
     text-align: center;
-    clear: both; /* Ensures that the contact section starts below the achievements section */
     margin-top: 60px; /* Adds space above the contact section */
-}
-
-
-/* Contact Section */
-#contact {
-    background: #007BFF;
-    color: #fff;
-    padding: 60px 0;
-    text-align: center;
 }
 
 #contact h2 {
@@ -390,7 +323,7 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     width: 100%;
-    max-width: 40vw;
+    max-width: 40vw; /* Ensure items fit within the viewport width */
     margin: 0 auto;
 }
 
@@ -437,10 +370,9 @@ footer p {
     height: 24px;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .all-works-portfolio .portfolio-item {
-        max-width: 90vw;
+        max-width: 90vw; /* Adjust width for smaller screens */
     }
 }
