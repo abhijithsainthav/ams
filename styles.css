@@ -63,6 +63,62 @@ header nav ul li a:hover {
     color: #007BFF;
 }
 
+/* General hero section styles */
+#hero {
+    background-image: url('desktop-hero-image.jpg'); /* Default for larger screens */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    text-align: center;
+    color: white;
+}
+
+.hero-container h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-container .button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    #hero {
+        background-image: url('mobile-hero-image.jpg'); /* Mobile-specific image */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-container h2 {
+        font-size: 2em;
+    }
+
+    .hero-container p {
+        font-size: 1em;
+    }
+
+    .hero-container .button {
+        padding: 8px 16px;
+    }
+}
+
+
 /* Hero Section */
 #hero {
     background: url('your-image.jpeg') no-repeat center center;
